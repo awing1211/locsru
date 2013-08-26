@@ -1,3 +1,8 @@
-file=File.open('title.txt', 'r') do |file|
-  file.readline.each do |line|
-    
+file=File.open('date.txt', 'r') do |file|
+  file.read do |line|
+    date = line.match (/[0-9]\d* /)
+    puts date
+    puts line
+  end
+end
+
