@@ -10,8 +10,9 @@ for record in client.search_retrieve('title = "Lord of Chaos" and author = "Jord
    File.open('sample.xml', 'w') do|file|
      file.write(record)
    end
-   
+puts record   
 end 
+
 
 puts "\n\n"
 puts "finished"
